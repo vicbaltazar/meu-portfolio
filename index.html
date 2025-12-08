@@ -4,7 +4,7 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Portfólio - Vitória Baltazar</title>
-  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="styles/style.css">
 </head>
 <body>
   <header>
@@ -21,11 +21,11 @@
 
   <main id="inicio" class="hero">
     <div class="avatar-circle">
-  <img
-    src="https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/778.png"
-    alt="Mimikyu"
-    class="avatar-img">
-</div>
+      <img
+        src="https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/778.png"
+        alt="Mimikyu"
+        class="avatar-img">
+    </div>
     <h2 class="hero-title">Olá, eu sou <span>Vitória</span></h2>
     <p class="hero-subtitle">Desenvolvedora Backend em formação</p>
     <p class="hero-text">
@@ -42,9 +42,31 @@
     </div>
   </main>
 
-  <section id="sobre" class="section">
-    <h2>Sobre mim</h2>
-    <p>Estudante de Análise e Desenvolvimento de Sistemas na Unip, focada em backend com Python, JSON e banco de dados.</p>
+  <section id="sobre" class="section section-sobre">
+    <h2 class="section-title">Sobre mim</h2>
+
+    <p class="sobre-text">
+      Estudante de Análise e Desenvolvimento de Sistemas na Unip, apaixonada por Python, JSON,
+      banco de dados e projetos ligados a música e dados. Busco sempre aprender coisas novas
+      e transformar ideias em soluções digitais úteis.
+    </p>
+
+    <a href="#contato" class="btn btn-primary sobre-btn">
+      Acessar Currículo / Contato
+    </a>
+
+    <div class="sobre-cards">
+      <div class="sobre-card">
+        <h3>Formação</h3>
+        <p><strong>ADS</strong> – Unip</p>
+        <p>Em andamento</p>
+      </div>
+      <div class="sobre-card">
+        <h3>Foco</h3>
+        <p><strong>Backend</strong> – Python, APIs REST</p>
+        <p>JSON, bancos de dados</p>
+      </div>
+    </div>
   </section>
 
   <section id="projetos" class="section">
