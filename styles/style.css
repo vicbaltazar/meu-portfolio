@@ -125,9 +125,8 @@ body {
 }
 
 .avatar-circle {
-  width: 120px;
-  height: 120px;
-   image-rendering: pixelated;
+  width: 200px;
+  height: 200px;
   border-radius: 50%;
   border: 6px solid var(--accent);
   background: radial-gradient(circle, #ffffff 0%, #e0f2fe 55%, #bfdbfe 100%);
@@ -138,8 +137,8 @@ body {
 }
 
 .avatar-circle img {
-  width: 140px;
-  height: 140px;
+  width: 160px;
+  height: 160px;
   image-rendering: pixelated; /* fica com cara de sprite */
 }
 
@@ -430,4 +429,5 @@ body {
     flex-direction: column;
   }
 }
+
 
