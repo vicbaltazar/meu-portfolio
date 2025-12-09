@@ -114,8 +114,9 @@ body {
 }
 
 .avatar-circle {
-  width: 170px;
-  height: 170px;
+  width: 120px;
+  height: 120px;
+  image-rendering: pixelated;
   border-radius: 50%;
   border: 6px solid var(--accent);
   background: radial-gradient(circle, #ffffff 0%, #e0f2fe 55%, #bfdbfe 100%);
@@ -126,8 +127,8 @@ body {
 }
 
 .avatar-circle img {
-  width: 120px;
-  height: 120px;
+  width: 140px;
+  height: 140px;
   image-rendering: pixelated; /* fica com cara de sprite */
 }
 
@@ -194,6 +195,16 @@ body {
   background: rgba(61, 125, 202, 0.06);
   border-color: var(--primary-dark);
   transform: translateY(-2px);
+}
+.sobre-actions {
+  margin-top: 28px;
+  display: flex;
+  justify-content: center;
+}
+
+.btn-curriculo {
+  min-width: 260px;
+  border-radius: 999px;
 }
 
 /* LINKS SOCIAIS */
