@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Portfólio Pokémon - Vitória Baltazar</title>
+
+  <!-- Fonte Google (ex.: Poppins) -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap" rel="stylesheet">
+
+  <link rel="stylesheet" href="styles/style.css">
+</head>
+<body>
+  <!-- Navegação -->
+  <header class="navbar">
+    <div class="navbar-logo">
+      <img src="https://github.com/msikma/pokesprite/blob/master/items/ball/master.png" alt="Logo PokéDev">
+      <span class="navbar-name">Vitória Baltazar</span>
+    </div>
+    <nav class="navbar-links">
+      <a href="#inicio">Início</a>
+      <a href="#sobre">Sobre</a>
+      <a href="#projetos">Projetos</a>
+      <a href="#conquistas">Conquistas</a>
+      <a href="#contato">Contato</a>
+    </nav>
+  </header>
+
+  <!-- Hero -->
+  <main id="inicio" class="hero">
+    <div class="avatar-circle">
+      <!-- coloque aqui seu sprite Pokémon -->
+      <img src="https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/778.png">
+    </div>
+    <h1 class="hero-title">Olá, eu sou <span class="hero-highlight">Vitória</span></h1>
+    <h2 class="hero-subtitle">Desenvolvedora Backend em formação</h2>
+    <p class="hero-text">
+      Estudante de Análise e Desenvolvimento de Sistemas, apaixonada por Python, JSON e
+      bancos de dados. Cria projetos com tema Pokémon para explorar APIs, dados e o mundo da programação.
+    </p>
+    <div class="hero-buttons">
+      <a href="#projetos" class="btn btn-primary">Ver meus projetos</a>
+      <a href="#contato" class="btn btn-outline">Entrar em contato</a>
+    </div>
+    <div class="hero-social">
+      <a href="https://github.com/seuuser" target="_blank">GitHub</a>
+      <a href="https://www.linkedin.com/in/seuuser" target="_blank">LinkedIn</a>
+    </div>
+  </main>
+
+  <!-- Sobre -->
+  <section id="sobre" class="section section-light">
+    <div class="section-container">
+      <h3 class="section-title">Sobre mim</h3>
+      <p class="section-text">
+        Desenvolvedora em formação focada em backend com Python, APIs REST e modelagem de dados.
+        Gosta de transformar conceitos de jogos, como Pokédex e times de Pokémon, em sistemas reais
+        que organizam informações, treinam lógica de programação e mostram boas práticas de código.
+      </p>
+    </div>
+  </section>
+
+  <!-- Projetos -->
+  <section id="projetos" class="section">
+    <div class="section-container">
+      <h3 class="section-title">Projetos Pokémon</h3>
+      <p class="section-text">
+        Alguns projetos que ajudam a evoluir o meu “time” de habilidades como dev.
+      </p>
+
+      <div class="cards-grid">
+        <!-- Projeto 1 -->
+        <article class="card">
+          <h4 class="card-title">Pokémon API Trainer</h4>
+          <p class="card-tag card-tag-fire">API • Python</p>
+          <p class="card-text">
+            Projeto em Python que consome a PokeAPI para buscar Pokémon pelo nome ou ID, retornando tipos, habilidades e status base.
+          </p>
+          <a href="https://github.com/vicbaltazar/meus-projetos/blob/main/Pokedex.json" target="_blank" class="card-link">
+            Ver no GitHub
+          </a>
+        </article>
+
+        <!-- Projeto 2 -->
+        <article class="card">
+          <h4 class="card-title">Pokédex MongoDB</h4>
+          <p class="card-tag card-tag-water">MongoDB • Python</p>
+          <p class="card-text">
+            Script em Python que conecta a um banco MongoDB local, cria uma coleção pokemons e insere uma mini Pokédex NoSQL, permitindo consultas, atualizações e exclusão de documentos.
+          </p>
+          <a href="https://github.com/vicbaltazar/meus-projetos/blob/main/pokedex.py" target="_blank" class="card-link">
+            Ver no GitHub
+          </a>
+        </article>
+
+        <!-- Projeto 3 -->
+        <article class="card">
+          <h4 class="card-title">Dashboard Pokédex</h4>
+          <p class="card-tag card-tag-grass">Dados • Visualização</p>
+          <p class="card-text">
+            Dashboard interativo para explorar estatísticas de Pokémon por tipo, região
+            e atributos, reforçando manipulação de dados e visualização para insights.
+          </p>
+          <a href="https://github.com/vicbaltazar/powerbi-pokemon" target="_blank" class="card-link">
+            Ver no GitHub
+          </a>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <!-- Conquistas -->
+  <section id="conquistas" class="section section-light">
+    <div class="section-container">
+      <h3 class="section-title">Insígnias e conquistas</h3>
+      <p class="section-text">
+        Algumas “insígnias” que representam minha jornada como treinadora de código.
+      </p>
+
+      <ul class="badge-list">
+        <li class="badge-item">Insígnia Backend: projetos em Python com foco em APIs e automações.</li>
+        <li class="badge-item">Insígnia Dados: modelagem de JSON e bancos de dados relacionais/NoSQL.</li>
+        <li class="badge-item">Insígnia Exploração: portfólio com temas criativos como Pokémon e dinossauros.</li>
+      </ul>
+    </div>
+  </section>
+
+  <!-- Contato -->
+  <section id="contato" class="section">
+    <div class="section-container">
+      <h3 class="section-title">Contato</h3>
+      <p class="section-text">
+        Quer batalhar ideias ou falar sobre um projeto? Entre em contato.
+      </p>
+
+      <div class="contact-grid">
+        <div>
+          <p><strong>E-mail:</strong> vicbaltazar287@icloud.com</p>
+          <p><strong>Cidade:</strong> Ribeirão Preto - SP</p>
+        </div>
+        <div>
+          <p><strong>GitHub:</strong> <a href="https://github.com/vicbaltazar" target="_blank">github.com/vicbaltazar</a></p>
+          <p><strong>LinkedIn:</strong> <a href="https://www.linkedin.com/in/vit%C3%B3ria-baltazar-3944a72ab/" target="_blank">/in/vitória-baltazar-3944a72ab</a></p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Rodapé -->
+  <footer class="footer">
+    <p>© 2025 - Vitória Baltazar • Portfólio Pokémon</p>
+  </footer>
+
+  <script src="scripts/script.js"></script>
+</body>
+</html>
