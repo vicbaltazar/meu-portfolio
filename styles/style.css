@@ -145,8 +145,9 @@ body {
 
 
 .avatar-circle {
-  width: 150px;
- height: 150px;
+  position: relative;
+  width: 180px;
+ height: 180px;
  border-radius: 50%;
  border: 6px solid var(--accent);
  background: radial-gradient(circle, #ffffff 0%, #e0f2fe 55%, #bfdbfe 100%);
@@ -154,14 +155,19 @@ body {
  align-items: center;
  justify-content: center;
  box-shadow: 0 20px 45px rgba(15, 23, 42, 0.18);
+ overflow: hidden;
 }
 
 
 
 .avatar-circle img {
- width: 220px;
- height: 220px;
- image-rendering: pixelated; /* fica com cara de sprite */
+ position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 120px;      /* ajusta o tamanho dentro do círculo */
+  height: 120px;
+  image-rendering: pixelated;
 }
 
 
