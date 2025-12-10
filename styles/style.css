@@ -145,7 +145,6 @@ body {
 
 
 .avatar-circle {
-  position: relative;
   width: 180px;
  height: 180px;
  border-radius: 50%;
@@ -155,18 +154,13 @@ body {
  align-items: center;
  justify-content: center;
  box-shadow: 0 20px 45px rgba(15, 23, 42, 0.18);
- overflow: hidden;
 }
 
 
 
 .avatar-circle img {
- position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  width: 230px;      /* ajusta o tamanho dentro do círculo */
-  height: 230px;
+  width: 96px;      /* ajusta o tamanho dentro do círculo */
+  height: 96px;
   image-rendering: pixelated;
 }
 
@@ -555,5 +549,3 @@ body {
   width: 100%;
  }
 }
-
-
