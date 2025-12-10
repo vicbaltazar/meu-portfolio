@@ -125,8 +125,8 @@ body {
 }
 
 .avatar-circle {
-  width: 1800px;
-  height: 180px;
+  width: 150px;
+  height: 150px;
   border-radius: 50%;
   border: 6px solid var(--accent);
   background: radial-gradient(circle, #ffffff 0%, #e0f2fe 55%, #bfdbfe 100%);
@@ -466,4 +466,5 @@ body {
     width: 100%;
   }
 }
+
 
