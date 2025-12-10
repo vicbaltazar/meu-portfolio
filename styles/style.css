@@ -165,8 +165,8 @@ body {
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
-  width: 120px;      /* ajusta o tamanho dentro do círculo */
-  height: 120px;
+  width: 220px;      /* ajusta o tamanho dentro do círculo */
+  height: 220px;
   image-rendering: pixelated;
 }
 
@@ -555,3 +555,4 @@ body {
   width: 100%;
  }
 }
+
