@@ -137,8 +137,8 @@ body {
 }
 
 .avatar-circle img {
-  width: 500px;
-  height: 500px;
+  width: 350px;
+  height: 350px;
   image-rendering: pixelated; /* fica com cara de sprite */
 }
 
@@ -466,6 +466,7 @@ body {
     width: 100%;
   }
 }
+
 
 
 
