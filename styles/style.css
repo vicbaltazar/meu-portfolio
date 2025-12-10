@@ -127,6 +127,7 @@ body {
 }
 
 .avatar-circle {
+  position: relative;
   width: 150px;
   height: 150px;
   border-radius: 50%;
@@ -136,9 +137,14 @@ body {
   align-items: center;
   justify-content: center;
   box-shadow: 0 20px 45px rgba(15, 23, 42, 0.18);
+  overflow: hidden;
 }
 
 .avatar-circle img {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
   width: 240px;
   height: 240px;
   image-rendering: pixelated; /* fica com cara de sprite */
