@@ -137,8 +137,8 @@ body {
 }
 
 .avatar-circle img {
-  width: 200px;
-  height: 200px;
+  width: 160px;
+  height: 160px;
   image-rendering: pixelated; /* fica com cara de sprite */
 }
 
@@ -429,6 +429,40 @@ body {
     flex-direction: column;
   }
 }
+.about-highlights {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1rem;
+  margin-top: 1.5rem;
+}
 
+.about-item {
+  background: #f5f7ff;
+  border-radius: 999px;
+  padding: 0.6rem 1.4rem;
+  font-size: 0.9rem;
+  display: flex;
+  flex-direction: column;
+  gap: 0.1rem;
+}
 
+.about-label {
+  font-weight: 600;
+  color: #4a4f68;
+}
 
+.about-value {
+  color: #1f2430;
+}
+
+/* Mobile: empilhar */
+@media (max-width: 768px) {
+  .about-highlights {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .about-item {
+    width: 100%;
+  }
+}
