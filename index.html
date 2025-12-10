@@ -19,7 +19,7 @@
       <img src="https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/items/master-ball.png" alt="Logo PokéDev">
       <span class="navbar-name">Vitória Baltazar</span>
     </div>
-    <nav class="navbar-links">
+    <nav class="navbar-links" aria-label="Navegação principal">
       <a href="#inicio">Início</a>
       <a href="#sobre">Sobre</a>
       <a href="#projetos">Projetos</a>
@@ -29,28 +29,43 @@
   </header>
 
   <!-- Hero -->
- <main id="inicio" class="hero">
-  <div class="hero-layout">
-    <div class="hero-left">
-      <div class="avatar-circle">
-        <img src="https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/778.png" alt="Avatar Pokémon">
+  <main id="inicio" class="hero">
+    <div class="hero-layout">
+      <div class="hero-left">
+        <div class="avatar-circle">
+          <img src="https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/778.png" alt="Avatar Pokémon">
+        </div>
       </div>
-    </div>
 
-    <div class="hero-right">
-      <h1 class="hero-title">Olá, eu sou <span class="hero-highlight">Vitória</span></h1>
-      <h2 class="hero-subtitle">Desenvolvedora Backend em formação</h2>
-      <p class="hero-text">...</p>
-      <div class="hero-buttons">
-        <a href="#projetos" class="btn btn-primary">Ver meus projetos</a>
-        <a href="#contato" class="btn btn-outline">Entrar em contato</a>
-      </div>
-      <div class="hero-social">
-        <!-- ícones aqui -->
+      <div class="hero-right">
+        <h1 class="hero-title">Olá, eu sou <span class="hero-highlight">Vitória</span></h1>
+        <h2 class="hero-subtitle">Desenvolvedora Backend em formação</h2>
+
+        <!-- TEXTO NOVO -->
+        <p class="hero-text">
+          Crio APIs e automações em Python, conectando dados e ideias de jogos para resolver problemas reais e treinar boas práticas de código.
+        </p>
+        <p class="hero-text hero-text-small">
+          Buscando estágio ou vaga júnior em desenvolvimento backend (Python).
+        </p>
+
+        <div class="hero-buttons">
+          <a href="#projetos" class="btn btn-primary">Ver meus projetos</a>
+          <a href="#contato" class="btn btn-outline">Entrar em contato</a>
+        </div>
+
+        <div class="hero-social">
+          <!-- Exemplo de ícones -->
+          <a href="https://github.com/vicbaltazar" target="_blank" rel="noopener noreferrer" aria-label="GitHub">
+            <!-- ícone GitHub via SVG ou font-icon -->
+          </a>
+          <a href="https://www.linkedin.com/in/vit%C3%B3ria-baltazar-3944a72ab/" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn">
+            <!-- ícone LinkedIn -->
+          </a>
+        </div>
       </div>
     </div>
-  </div>
-</main>
+  </main>
 
   <!-- Sobre -->
   <section id="sobre" class="section section-light">
@@ -58,9 +73,20 @@
       <h3 class="section-title">Sobre mim</h3>
       <p class="section-text">
         Desenvolvedora em formação focada em backend com Python, APIs REST e modelagem de dados.
-        Gosta de transformar conceitos de jogos, como Pokédex e times de Pokémon, em sistemas reais
-        que organizam informações, treinam lógica de programação e mostram boas práticas de código.
+        Gosto de transformar conceitos de jogos, como Pokédex e times de Pokémon, em sistemas que organizam informações,
+        treinam lógica de programação e mostram boas práticas de código.
       </p>
+      <p class="section-text">
+        Atualmente curso Análise e Desenvolvimento de Sistemas e construo projetos práticos com Python, MongoDB e visualização de dados
+        para consolidar minha base em desenvolvimento backend.
+      </p>
+
+      <!-- Bloco rápido de info (opcional, estilizar no CSS) -->
+      <div class="about-highlights">
+        <span><strong>Stack principal:</strong> Python, APIs REST, JSON, MongoDB, SQL</span>
+        <span><strong>Formação:</strong> ADS em andamento</span>
+        <span><strong>Local:</strong> Ribeirão Preto - SP · Disponível para remoto</span>
+      </div>
     </div>
   </section>
 
@@ -73,13 +99,15 @@
       </p>
 
       <!-- BOTÃO CURRÍCULO -->
-    <div class="sobre-actions">
-      <a href="https://vicbaltazar.github.io/portfolio/" 
-         target="_blank" 
-         class="btn btn-primary btn-curriculo">
-        Acessar Currículo Virtual
-      </a>
-    </div>
+      <div class="sobre-actions">
+        <a
+          href="https://vicbaltazar.github.io/portfolio/"
+          target="_blank"
+          rel="noopener noreferrer"
+          class="btn btn-primary btn-curriculo">
+          Acessar Currículo Virtual
+        </a>
+      </div>
 
       <div class="cards-grid">
         <!-- Projeto 1 -->
@@ -87,10 +115,14 @@
           <h4 class="card-title">Pokémon API Trainer</h4>
           <p class="card-tag card-tag-fire">API • Python</p>
           <p class="card-text">
-            Projeto em Python que consome a PokeAPI para buscar Pokémon pelo nome ou ID, retornando tipos, habilidades e status base.
+            Projeto em Python que consome a PokeAPI para buscar Pokémon pelo nome ou ID,
+            retornando tipos, habilidades e status base.
           </p>
-          <a href="https://github.com/vicbaltazar/meus-projetos/blob/main/Pokedex.json" target="_blank" class="card-link">
-            Ver no GitHub
+          <p class="card-techs">
+            <strong>Tecnologias:</strong> Python, requests, PokeAPI, JSON.
+          </p>
+          <a href="https://github.com/vicbaltazar/meus-projetos" target="_blank" rel="noopener noreferrer" class="card-link">
+            Ver repositório no GitHub
           </a>
         </article>
 
@@ -99,10 +131,14 @@
           <h4 class="card-title">Pokédex MongoDB</h4>
           <p class="card-tag card-tag-water">MongoDB • Python</p>
           <p class="card-text">
-            Script em Python que conecta a um banco MongoDB local, cria uma coleção pokemons e insere uma mini Pokédex NoSQL, permitindo consultas, atualizações e exclusão de documentos.
+            Script em Python que conecta a um banco MongoDB local, cria uma coleção de pokémons
+            e insere uma mini Pokédex NoSQL, permitindo consultas, atualizações e exclusão de documentos.
           </p>
-          <a href="https://github.com/vicbaltazar/meus-projetos/blob/main/pokedex.py" target="_blank" class="card-link">
-            Ver no GitHub
+          <p class="card-techs">
+            <strong>Tecnologias:</strong> Python, MongoDB, pymongo, NoSQL.
+          </p>
+          <a href="https://github.com/vicbaltazar/meus-projetos" target="_blank" rel="noopener noreferrer" class="card-link">
+            Ver repositório no GitHub
           </a>
         </article>
 
@@ -111,11 +147,14 @@
           <h4 class="card-title">Dashboard Pokédex</h4>
           <p class="card-tag card-tag-grass">Dados • Visualização</p>
           <p class="card-text">
-            Dashboard interativo para explorar estatísticas de Pokémon por tipo, região
-            e atributos, reforçando manipulação de dados e visualização para insights.
+            Dashboard interativo para explorar estatísticas de Pokémon por tipo, região e atributos,
+            reforçando manipulação de dados e visualização para insights.
           </p>
-          <a href="https://github.com/vicbaltazar/powerbi-pokemon" target="_blank" class="card-link">
-            Ver no GitHub
+          <p class="card-techs">
+            <strong>Tecnologias:</strong> Power BI, modelagem de dados, DAX, CSV/JSON.
+          </p>
+          <a href="https://github.com/vicbaltazar/powerbi-pokemon" target="_blank" rel="noopener noreferrer" class="card-link">
+            Ver repositório no GitHub
           </a>
         </article>
       </div>
@@ -131,9 +170,15 @@
       </p>
 
       <ul class="badge-list">
-        <li class="badge-item">Insígnia Backend: projetos em Python com foco em APIs e automações.</li>
-        <li class="badge-item">Insígnia Dados: modelagem de JSON e bancos de dados relacionais/NoSQL.</li>
-        <li class="badge-item">Insígnia Exploração: portfólio com temas criativos como Pokémon e dinossauros.</li>
+        <li class="badge-item">
+          Insígnia Backend: projetos em Python com foco em APIs, automações e boas práticas de organização de código.
+        </li>
+        <li class="badge-item">
+          Insígnia Dados: modelagem de JSON e bancos de dados relacionais/NoSQL em projetos práticos como a Pokédex MongoDB.
+        </li>
+        <li class="badge-item">
+          Insígnia Exploração: portfólio com temas criativos como Pokémon e dinossauros para tornar o estudo mais divertido.
+        </li>
       </ul>
     </div>
   </section>
@@ -145,6 +190,9 @@
       <p class="section-text">
         Quer batalhar ideias ou falar sobre um projeto? Entre em contato.
       </p>
+      <p class="section-text">
+        Também estou aberta a oportunidades de estágio e vaga júnior em desenvolvimento backend.
+      </p>
 
       <div class="contact-grid">
         <div>
@@ -152,8 +200,8 @@
           <p><strong>Cidade:</strong> Ribeirão Preto - SP</p>
         </div>
         <div>
-          <p><strong>GitHub:</strong> <a href="https://github.com/vicbaltazar" target="_blank">github.com/vicbaltazar</a></p>
-          <p><strong>LinkedIn:</strong> <a href="https://www.linkedin.com/in/vit%C3%B3ria-baltazar-3944a72ab/" target="_blank">/in/vitória-baltazar-3944a72ab</a></p>
+          <p><strong>GitHub:</strong> <a href="https://github.com/vicbaltazar" target="_blank" rel="noopener noreferrer">github.com/vicbaltazar</a></p>
+          <p><strong>LinkedIn:</strong> <a href="https://www.linkedin.com/in/vit%C3%B3ria-baltazar-3944a72ab/" target="_blank" rel="noopener noreferrer">/in/vitória-baltazar-3944a72ab</a></p>
         </div>
       </div>
     </div>
@@ -167,5 +215,3 @@
   <script src="scripts/script.js"></script>
 </body>
 </html>
-
-
