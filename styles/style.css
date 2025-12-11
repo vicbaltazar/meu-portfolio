@@ -159,8 +159,8 @@ body {
 
 
 .avatar-circle img {
-  width: 96px;      /* ajusta o tamanho dentro do círculo */
-  height: 96px;
+  width: 130px;      /* ajusta o tamanho dentro do círculo */
+  height: 130px;
   image-rendering: pixelated;
 }
 
@@ -548,4 +548,5 @@ body {
  .about-item {
   width: 100%;
  }
+
 }
