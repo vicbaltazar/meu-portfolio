@@ -159,8 +159,8 @@ body {
 
 
 .avatar-circle img {
-  width: 130px;      /* ajusta o tamanho dentro do círculo */
-  height: 130px;
+  width: 150px;      /* ajusta o tamanho dentro do círculo */
+  height: 150px;
   image-rendering: pixelated;
 }
 
@@ -550,3 +550,4 @@ body {
  }
 
 }
+
