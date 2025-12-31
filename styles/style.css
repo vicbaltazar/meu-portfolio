@@ -403,13 +403,6 @@ body {
   color: var(--primary-dark);
 }
 
-.contact-actions {
-  margin-top: 20px;
-  display: flex;
-  flex-wrap: wrap;
-  gap: 12px;
-}
-
 /* RODAPÉ */
 
 .footer {
@@ -483,10 +476,6 @@ body {
   .hero-buttons {
     flex-direction: column;
   }
-
-  .contact-actions {
-    flex-direction: column;
-  }
 }
 
 /* HIGHLIGHTS SOBRE MIM */
@@ -516,3 +505,4 @@ body {
 .about-value {
   color: #1f2430;
 }
+
