@@ -311,14 +311,18 @@ body {
   opacity: 1;
 }
 
-.card-front {
-  background: linear-gradient(145deg, #ffffff 0%, #e0f2fe 40%, #ffffff 100%);
+/* fundos dos cards por tipo */
+.card-fire {
+  background: linear-gradient(145deg, #fff7f7 0%, #ffe4e6 40%, #ffffff 100%);
 }
 
-.card-data {
-  background: linear-gradient(145deg, #ffffff 0%, #bbf7d0 35%, #ffffff 100%);
+.card-water {
+  background: linear-gradient(145deg, #eff6ff 0%, #bfdbfe 40%, #ffffff 100%);
 }
 
+.card-grass {
+  background: linear-gradient(145deg, #f0fdf4 0%, #bbf7d0 35%, #ffffff 100%);
+}
 .card-title {
   font-size: 1.1rem;
 }
@@ -403,6 +407,13 @@ body {
   color: var(--primary-dark);
 }
 
+.contact-actions {
+  margin-top: 20px;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 12px;
+}
+
 /* RODAPÉ */
 
 .footer {
@@ -476,6 +487,10 @@ body {
   .hero-buttons {
     flex-direction: column;
   }
+
+  .contact-actions {
+    flex-direction: column;
+  }
 }
 
 /* HIGHLIGHTS SOBRE MIM */
@@ -505,4 +520,3 @@ body {
 .about-value {
   color: #1f2430;
 }
-
