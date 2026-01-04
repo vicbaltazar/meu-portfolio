@@ -305,6 +305,7 @@ body {
   opacity: 0;
   background: radial-gradient(circle at top right, rgba(61, 125, 202, 0.16), transparent 60%);
   transition: opacity 0.2s ease;
+  pointer-events: none;
 }
 
 .card:hover::before {
@@ -370,6 +371,7 @@ body {
   font-weight: 600;
   color: var(--primary-dark);
   text-decoration: none;
+  cursor: pointer;
 }
 
 .card-link:hover {
