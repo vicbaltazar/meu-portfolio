@@ -28,20 +28,26 @@ body {
 }
 
 /* NAVBAR */
-
 .navbar {
   position: fixed;
   top: 0;
   left: 0;
   width: 100%;
-  padding: 16px 80px;
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
+  /* o container interno deve ter o max-width, não o elemento fixo */
   background: rgba(245, 247, 255, 0.95);
   backdrop-filter: blur(12px);
   border-bottom: 1px solid rgba(212, 212, 245, 0.8);
   z-index: 10;
+}
+
+/* container interno da navbar (adicione uma div .navbar-inner no HTML) */
+.navbar-inner {
+  max-width: 1040px;
+  margin: 0 auto;
+  padding: 12px 16px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
 }
 
 .navbar-logo {
@@ -105,9 +111,8 @@ body {
 }
 
 /* HERO LAYOUT (2 COLUNAS) */
-
 .hero {
-  min-height: 100vh;
+  min-height: calc(100vh - 70px);
   padding: 140px 20px 72px;
   display: flex;
   justify-content: center;
@@ -152,7 +157,7 @@ body {
 }
 
 .avatar-circle img {
-  width: 190px;      /* ajusta o tamanho dentro do círculo */
+  width: 190px;
   height: 190px;
   image-rendering: pixelated;
 }
@@ -183,15 +188,15 @@ body {
   gap: 16px;
   margin-bottom: 20px;
   flex-wrap: wrap;
+  row-gap: 12px;
 }
 
 /* BOTÕES */
-
 .btn {
   display: inline-block;
-  padding: 12px 28px;
+  padding: 14px 24px;
   border-radius: 999px;
-  font-weight: 600;
+  font-weight: 600;         /* corrigido: valor numérico ou keyword */
   text-decoration: none;
   font-size: 0.98rem;
   transition: transform 0.15s ease, box-shadow 0.15s ease, background 0.15s ease,
@@ -233,7 +238,6 @@ body {
 }
 
 /* LINKS SOCIAIS */
-
 .hero-social {
   display: flex;
   gap: 16px;
@@ -252,7 +256,6 @@ body {
 }
 
 /* SEÇÕES GENÉRICAS */
-
 .section {
   padding: 72px 20px;
 }
@@ -277,11 +280,10 @@ body {
 }
 
 /* CARDS DE PROJETOS */
-
 .cards-grid {
   margin-top: 32px;
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+  grid-template-columns: repeat(auto-fit, minmax(230px, 1fr));
   gap: 20px;
 }
 
@@ -324,6 +326,7 @@ body {
 .card-grass {
   background: linear-gradient(145deg, #f0fdf4 0%, #bbf7d0 35%, #ffffff 100%);
 }
+
 .card-title {
   font-size: 1.1rem;
 }
@@ -379,7 +382,6 @@ body {
 }
 
 /* CONQUISTAS / INSÍGNIAS */
-
 .badge-list {
   list-style: none;
   margin-top: 24px;
@@ -397,7 +399,6 @@ body {
 }
 
 /* CONTATO */
-
 .contact-grid {
   margin-top: 24px;
   display: grid;
@@ -417,7 +418,6 @@ body {
 }
 
 /* RODAPÉ */
-
 .footer {
   padding: 18px 20px 26px;
   text-align: center;
@@ -427,7 +427,6 @@ body {
 }
 
 /* LINK ATIVO NO MENU */
-
 .navbar-links a.active-link {
   color: var(--primary-dark);
 }
@@ -437,12 +436,20 @@ body {
 }
 
 /* RESPONSIVO */
-
 @media (max-width: 768px) {
-  .navbar {
+  .navbar-inner {
     padding: 12px 16px;
     flex-direction: column;
     gap: 10px;
+  }
+
+  .navbar-links {
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+
+  .navbar-links a {
+    padding: 8px 0;
   }
 
   .hero {
@@ -466,11 +473,6 @@ body {
     text-align: center;
   }
 
-  .navbar-links {
-    flex-wrap: wrap;
-    justify-content: center;
-  }
-
   .about-highlights {
     flex-direction: column;
     align-items: flex-start;
@@ -478,6 +480,22 @@ body {
 
   .about-item {
     width: 100%;
+  }
+
+  .section {
+    padding: 56px 16px;
+  }
+
+  .section-title {
+    font-size: 1.4rem;
+  }
+
+  .section-text {
+    font-size: 0.95rem;
+  }
+
+  .badge-item {
+    font-size: 0.9rem;
   }
 }
 
@@ -493,10 +511,36 @@ body {
   .contact-actions {
     flex-direction: column;
   }
+
+  .avatar-circle {
+    width: 180px;
+    height: 180px;
+  }
+
+  .avatar-circle img {
+    width: 150px;
+    height: 150px;
+  }
+
+  .hero-text {
+    font-size: 0.9rem;
+  }
+
+  .btn {
+    width: 100%;
+    text-align: center;
+  }
+
+  .badge-item {
+    padding: 8px 10px;
+  }
+
+  .contact-grid {
+    gap: 12px;
+  }
 }
 
 /* HIGHLIGHTS SOBRE MIM */
-
 .about-highlights {
   display: flex;
   flex-wrap: wrap;
