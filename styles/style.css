@@ -33,14 +33,13 @@ body {
   top: 0;
   left: 0;
   width: 100%;
-  /* o container interno deve ter o max-width, não o elemento fixo */
   background: rgba(245, 247, 255, 0.95);
   backdrop-filter: blur(12px);
   border-bottom: 1px solid rgba(212, 212, 245, 0.8);
   z-index: 10;
 }
 
-/* container interno da navbar (adicione uma div .navbar-inner no HTML) */
+/* container interno da navbar */
 .navbar-inner {
   max-width: 1040px;
   margin: 0 auto;
@@ -48,6 +47,42 @@ body {
   display: flex;
   align-items: center;
   justify-content: space-between;
+}
+
+/* BOTÃO HAMBÚRGUER */
+.navbar-toggle {
+  display: none;              /* desktop: escondido */
+  background: none;
+  border: none;
+  cursor: pointer;
+  padding: 4px;
+  margin-left: auto;
+}
+
+.navbar-toggle span {
+  display: block;
+  width: 20px;
+  height: 2px;
+  border-radius: 999px;
+  background: var(--text-soft);
+  transition: transform 0.2s ease, opacity 0.2s ease;
+}
+
+.navbar-toggle span + span {
+  margin-top: 4px;
+}
+
+/* ESTADO ABERTO (animação em X) */
+.navbar-inner.is-open .navbar-toggle span:nth-child(1) {
+  transform: translateY(6px) rotate(45deg);
+}
+
+.navbar-inner.is-open .navbar-toggle span:nth-child(2) {
+  opacity: 0;
+}
+
+.navbar-inner.is-open .navbar-toggle span:nth-child(3) {
+  transform: translateY(-6px) rotate(-45deg);
 }
 
 .navbar-logo {
@@ -196,7 +231,7 @@ body {
   display: inline-block;
   padding: 14px 24px;
   border-radius: 999px;
-  font-weight: 600;         /* corrigido: valor numérico ou keyword */
+  font-weight: 600;
   text-decoration: none;
   font-size: 0.98rem;
   transition: transform 0.15s ease, box-shadow 0.15s ease, background 0.15s ease,
@@ -439,8 +474,37 @@ body {
 @media (max-width: 768px) {
   .navbar-inner {
     padding: 12px 16px;
+  }
+
+  .navbar-links {
+    position: absolute;
+    top: 64px; /* ajuste se a barra ficar maior/menor */
+    left: 0;
+    right: 0;
+    background: rgba(245, 247, 255, 0.98);
+    backdrop-filter: blur(12px);
+    display: none;
     flex-direction: column;
-    gap: 10px;
+    align-items: center;
+    gap: 8px;
+    padding: 12px 0 16px;
+    border-bottom: 1px solid rgba(212, 212, 245, 0.8);
+    box-shadow: 0 18px 30px rgba(15, 23, 42, 0.08);
+  }
+
+  .navbar-links a {
+    padding: 6px 0;
+    width: 100%;
+    text-align: center;
+  }
+
+  /* mostra o menu quando .is-open estiver no container */
+  .navbar-inner.is-open .navbar-links {
+    display: flex;
+  }
+
+  .navbar-toggle {
+    display: block; /* mobile: mostra o hambúrguer */
   }
 
   .hero {
@@ -529,17 +593,6 @@ body {
   .contact-grid {
     gap: 12px;
   }
-
-  .navbar-links {
-    flex-direction: column;
-    align-items: center;
-    gap: 4px;
-  }
-
-  .navbar-links a {
-    width: 100%;
-    text-align: center;
-  }
 }
 
 /* HIGHLIGHTS SOBRE MIM */
@@ -568,4 +621,3 @@ body {
 .about-value {
   color: #1f2430;
 }
-
