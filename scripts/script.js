@@ -1,5 +1,7 @@
-// Scroll suave ao clicar nos links do menu
+// Scroll suave ao clicar nos links do menu e botões do hero
 const navLinks = document.querySelectorAll(".navbar-links a, .hero-buttons a");
+const navbarInner = document.querySelector(".navbar-inner");
+const toggleBtn = document.querySelector(".navbar-toggle");
 
 navLinks.forEach(link => {
   link.addEventListener("click", event => {
@@ -11,6 +13,12 @@ navLinks.forEach(link => {
       const section = document.querySelector(href);
       if (section) {
         section.scrollIntoView({ behavior: "smooth" });
+      }
+
+      // se o menu hambúrguer estiver aberto, fecha após o clique
+      if (navbarInner && toggleBtn && navbarInner.classList.contains("is-open")) {
+        navbarInner.classList.remove("is-open");
+        toggleBtn.setAttribute("aria-expanded", "false");
       }
     }
   });
