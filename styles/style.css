@@ -443,15 +443,6 @@ body {
     gap: 10px;
   }
 
-  .navbar-links {
-    flex-wrap: wrap;
-    justify-content: center;
-  }
-
-  .navbar-links a {
-    padding: 8px 0;
-  }
-
   .hero {
     padding-top: 130px;
   }
@@ -577,3 +568,4 @@ body {
 .about-value {
   color: #1f2430;
 }
+
